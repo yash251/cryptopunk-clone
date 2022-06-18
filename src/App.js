@@ -3,6 +3,7 @@ import Header from './components/Header';
 import CollectionCard from './components/CollectionCard'
 import { useState, useEffect } from 'react'
 import axios from 'axios';
+import PunkList from './components/PunkList';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         traits={[{ value : 7 }]} 
         image='https://i.imgur.com/ARwnIqd.jpeg' 
       />
+      <PunkList punkListData={punkListData} />
     </div>
   );
 }
