@@ -4,7 +4,7 @@ import CollectionCard from './CollectionCard'
 const PunkList = ({ punkListData }) => {
   return (
     <div className='punkList'>
-        {punkListData.map(punk => {
+        {punkListData.map(punk => (
             <div>
                 <CollectionCard
                     key={punk.token_id}
@@ -14,7 +14,7 @@ const PunkList = ({ punkListData }) => {
                     image={punk.image_original_url} // from consoled array
                 />
             </div>
-        })}
+        ))}
     </div>
   )
 }
