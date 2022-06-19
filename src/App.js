@@ -17,7 +17,7 @@ function App() {
         'https://testnets-api.opensea.io/assets?asset_contract_address=0x07dEe7a6db902717235C78f53764AAEfECABfA74&order_direction=asc'
       )
       console.log(openseaData.data.assets);
-      setPunkListData(openseaData.data.assets)
+      setPunkListData(openseaData.data.assets.reverse());
     }
 
     getMyNfts();    
